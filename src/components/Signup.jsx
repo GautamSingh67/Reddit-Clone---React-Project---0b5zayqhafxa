@@ -22,13 +22,13 @@ export default function LoginForm({onClick}) {
     <div className='myForm'>
       <form onSubmit={handlesubmit}>
         <div>
-        <label htmlFor='mail' className='input-label'>Enten Email:</label><br></br>
+        <label htmlFor='mail' className='input-label'>Enter Email:</label><br></br>
         <input type='email' className='input' id='mail' name='email' value={input.email} onChange={(e) => {
                        setInput({ ...input, [e.target.name]: e.target.value });
                     }}></input>
         </div>
         <div>
-        <label htmlFor='password' className='input-label'>Enten Password:</label><br></br>
+        <label htmlFor='password' className='input-label'>Enter Password:</label><br></br>
         <input type='password' className='input' id='password' name='password' value={input.password} onChange={(e) => {
                         setInput({ ...input, [e.target.name]: e.target.value });
                     }}></input>
